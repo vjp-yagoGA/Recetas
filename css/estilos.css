@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #f5f6f8;
+  color: #222;
+}
+
+.cabecera {
+  margin-bottom: 1.5rem;
+}
+
+#titulo {
+  margin: 0 0 0.5rem;
+}
+
+#resumen,
+#estadisticas {
+  margin: 0.2rem 0;
+}
+
+.controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+#buscador,
+#nombre,
+#categoria,
+#tiempo,
+#fecha,
+#codigo {
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: white;
+}
+
+button {
+  background: #2d6cdf;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #222;
+}
+
+button:hover {
+  filter: brightness(0.97);
+}
+
+#listado {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  border-left: 4px solid #cbd5e1;
+}
+
+.tarjeta.reciente {
+  border-left: 6px solid #f26b3a;
+}
+
+.tarjeta h3 {
+  margin: 0 0 0.5rem;
+}
+
+.tarjeta p {
+  margin: 0.25rem 0;
+}
+
+.tarjeta .categoria {
+  display: inline-block;
+  background: #e7f0ff;
+  color: #1e3a8a;
+  border-radius: 999px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.fecha {
+  color: #6b7785;
+  font-size: 0.9rem;
+}
+
+.formulario {
+  margin-top: 2rem;
+  background: white;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.mensaje {
+  min-height: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.mensaje.error {
+  color: #b42318;
+}
+
+.mensaje.ok {
+  color: #067647;
+}
+
+#noHayResultados {
+  margin-top: 1rem;
+  color: #475467;
+  font-weight: 600;
+}

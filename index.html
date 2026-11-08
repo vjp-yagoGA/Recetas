@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colección de recetas</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <h1 id="titulo">Colección de recetas</h1>
+      <p id="resumen">Mostrando 0 de 0 recetas</p>
+      <p id="estadisticas">No hay estadísticas aún.</p>
+    </header>
+
+    <section class="controles" aria-label="Controles de búsqueda y ordenación">
+      <input id="buscador" type="search" placeholder="Buscar recetas" aria-label="Buscar recetas" />
+      <button id="ordenNombre" type="button">Ordenar A-Z</button>
+      <button id="ordenTiempo" type="button">Ordenar por tiempo</button>
+      <button id="ordenFecha" type="button">Más recientes primero</button>
+      <button id="limpiar" type="button" class="secondary">Limpiar</button>
+      <button id="olvidarOrden" type="button" class="secondary">Olvidar orden</button>
+    </section>
+
+    <main>
+      <div id="listado" aria-live="polite"></div>
+      <p id="noHayResultados" hidden>No hay recetas con ese texto.</p>
+    </main>
+
+    <section class="formulario">
+      <h2>Añadir receta</h2>
+      <div class="grid-form">
+        <input id="nombre" type="text" placeholder="Nombre" aria-label="Nombre" />
+        <input id="categoria" type="text" placeholder="Categoría" aria-label="Categoría" />
+        <input id="tiempo" type="number" min="1" placeholder="Tiempo (min)" aria-label="Tiempo" />
+        <input id="fecha" type="date" aria-label="Fecha" />
+        <input id="codigo" type="text" placeholder="Código (ABC-1234)" aria-label="Código" />
+      </div>
+      <button id="guardarReceta" type="button">Guardar receta</button>
+      <p id="mensajeValidacion" class="mensaje" aria-live="polite"></p>
+    </section>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
