@@ -1,10 +1,7 @@
 # Sprint 1 - DWEC
 
-Proyecto basado en los requisitos del sprint 1 de Desarrollo Web en Entorno Cliente.
 
-## Sprint 1
-
-Se ha desarrollado una pequeña aplicación de colección de recetas con:
+Aplicación de colección de recetas con:
 - cabecera con título y resumen
 - listado de elementos generados con createElement, textContent y append
 - búsqueda por texto en tiempo real
@@ -21,9 +18,6 @@ Se ha desarrollado una pequeña aplicación de colección de recetas con:
 2. Ejecutar un servidor local, por ejemplo:
    python -m http.server 8000
 3. Abrir http://localhost:8000
-
-## Uso de IA
-Se ha empleado IA para extraer y resumir los requisitos del documento oficial del sprint y traducirlos a una versión funcional mínima del proyecto.
 
 ## Archivos principales
 - index.html
